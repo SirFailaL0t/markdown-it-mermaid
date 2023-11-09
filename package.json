@@ -1,29 +1,38 @@
 {
-  "name": "@sirfailal0t/markdown-it-mermaid",
-  "version": "0.2.6",
-  "description": "Mermaid plugin for markdown-it.",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "webpack --progress --color",
-    "build:watch": "yarn build --watch",
-    "release": "yarn build -p",
-    "test": "node -r babel-register test/index.js",
-    "upgrade": "yarn-upgrade-all"
-  },
-  "repository": "git@github.com:SirFailaL0t/markdown-it-mermaid.git",
-  "author": "Tyler Long <tyler4long@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "markdown-it": "^8.4.0",
-    "standard": "^10.0.3",
-    "webpack": "^3.10.0",
-    "webpack-node-externals": "^1.6.0",
-    "yarn-upgrade-all": "^0.2.0"
-  },
-  "dependencies": {
-    "mermaid": "^10"
-  }
+	"author": "Tyler Long <tyler4long@gmail.com>",
+	"bugs": {
+		"url": "https://github.com/SirFailaL0t/markdown-it-mermaid/issues"
+	},
+	"bundleDependencies": false,
+	"dependencies": {
+		"mermaid": "^10"
+	},
+	"deprecated": false,
+	"description": "Mermaid plugin for markdown-it.",
+	"devDependencies": {
+		"@babel/core": "^7",
+		"@babel/preset-env": "^7",
+		"@babel/register": "^7",
+		"babel-loader": "^9",
+		"markdown-it": "^13",
+		"markdown-it-latex": "^0.2.0",
+		"standard": "^17",
+		"webpack": "^5",
+		"webpack-cli": "^5",
+		"yarn-upgrade-all": "^0.7.2"
+	},
+	"homepage": "https://github.com/SirFailaL0t/markdown-it-mermaid#readme",
+	"license": "MIT",
+	"main": "dist/index.js",
+	"name": "markdown-it-mermaid",
+	"repository": "git+ssh://git@github.com/SirFailaL0t/markdown-it-mermaid.git",
+	"scripts": {
+		"build": "webpack --progress --color",
+		"build:watch": "yarn build --watch",
+		"release": "yarn build -p",
+		"test": "node -r @babel/register test/index.js",
+		"upgrade": "yarn-upgrade-all"
+	},
+	"type": "module",
+	"version": "0.2.6"
 }

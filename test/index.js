@@ -1,6 +1,6 @@
 import assert from 'assert'
 import markdownIt from 'markdown-it'
-import markdownItLatex from '../dist/index'
+import markdownItLatex from '../dist/index.js'
 
 const mdi = markdownIt()
 mdi.use(markdownItLatex)
@@ -27,7 +27,7 @@ graph TD
 console.log(mdi.render(`\`\`\`
 graph TD
     A[Christmas] -->|Get money| B(Go shopping)
-    B ----> C{Let me think}
+    B -> C{Let me think}
     C -->|One| D[Laptop]
     C -->|Two| E[iPhone]
     C -->|Three| F[Car]
@@ -52,7 +52,7 @@ graph TD
 assert(mdi.render(`\`\`\`
 graph TD
     A[Christmas] -->|Get money| B(Go shopping)
-    B ----> C{Let me think}
+    B -> C{Let me think}
     C -->|One| D[Laptop]
     C -->|Two| E[iPhone]
     C -->|Three| F[Car]
